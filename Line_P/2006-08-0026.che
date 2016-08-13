@@ -1,0 +1,146 @@
+*2006/10/20 15:20:17.73
+*IOS HEADER VERSION 1.7  2006/08/20 2006/08/20
+
+*FILE
+    START TIME          : UTC 2006/02/06 02:22:23.000
+    TIME INCREMENT      : 0 0 0 0.416667E-01 0  ! (day hr min sec ms)
+    NUMBER OF RECORDS   : 19
+    DATA DESCRIPTION    : Bottle:Rosette:Up:Stop + CTD:Up
+    FILE TYPE           : ASCII
+    NUMBER OF CHANNELS  : 13
+
+    $TABLE: CHANNELS
+    ! No Name                        Units           Minimum        Maximum
+    ! -- --------------------------- --------------- -------------- --------------
+       1 Pressure:CTD                dbar            5.6            1291
+       2 Temperature:CTD             deg_C_(ITS90)   2.9517         9.4387
+       3 Salinity:Bottle             PSS-78          32.475         34.473
+       4 Flag:Salinity:Bottle        ' '
+       5 Oxygen:Dissolved            µmol/kg         12.65          276.07
+       6 Flag:Oxygen:Dissolved       ' '
+       7 Nitrate_plus_Nitrite        µmol/l          9.2            45
+       8 Flag:Nitrate_plus_Nitrite   ' '
+       9 Phosphate                   µmol/l          1              3.33
+      10 Flag:Phosphate              ' '
+      11 Silicate                    µmol/l          10.7           149.2
+      12 Flag:Silicate               ' '
+      13 Sample_Number               n/a             135            153
+    $END
+
+    $TABLE: CHANNEL DETAIL
+    ! No  Pad   Start  Width  Format  Type  Decimal_Places
+    ! --  ----  -----  -----  ------  ----  --------------
+       1  -99   ' '        9  F       ' '     1
+       2  -99   ' '       10  F       ' '     4
+       3  -99   ' '        9  F       R4      3
+       4  0     ' '        2  NQ      C     ' '
+       5  -99   ' '        7  F       ' '     2
+       6  0     ' '        3  NQ      C     ' '
+       7  -99   ' '        6  F       R4      1
+       8  0     ' '        2  NQ      C     ' '
+       9  -99   ' '        7  F       R4      2
+      10  0     ' '        2  NQ      C     ' '
+      11  -99   ' '        6  F       R4      1
+      12  0     ' '        2  NQ      C     ' '
+      13  -99   ' '        5  I       I     ' '
+    $END
+
+*ADMINISTRATION
+    MISSION             : 2006-08
+    AGENCY              : IOS, Ocean Sciences Division, Sidney, B.C.
+    COUNTRY             : Canada
+    PROJECT             : Line P
+    SCIENTIST           : Robert M.
+    PLATFORM            : John P. Tully
+
+*LOCATION
+    GEOGRAPHIC AREA     : NE Pacific
+    STATION             : P4
+    EVENT NUMBER        : 26
+    LATITUDE            :  48  39.05000 N  ! (deg min)
+    LONGITUDE           : 126  40.03000 W  ! (deg min)
+    WATER DEPTH		: 1327
+
+*INSTRUMENT
+    TYPE                : Sea-Bird CTD
+    MODEL               : SBE-911plus
+    SERIAL NUMBER       : 0443
+
+*COMMENTS
+
+    Analysis methods:
+    -----------------
+
+      Salinity samples are collected in glass bottles and analyzed on Guildline
+      model 8400 Autosal Salinometers which are standardized with IAPSO standard
+      seawater.
+
+      Oxygen samples are analyzed on an automated Winkler titration system
+      following the procedures of Carpenter (1965). A Brinkmann model 665 Dosimat
+      and model PC910 Colorimeter is controlled by Visual-Basic program to
+      titrate the oxygen samples.
+
+      Chlorophyll samples are collected in calibrated polycarbonate
+      bottles (~330ml), then filtered onto 25mm MFS GF/75 filters at <70mmHg
+      vacuum. The filters are placed in glass scintillation vials and immediately
+      frozen at -20ºC until analysis. The chlorophyll is extracted in 10 ml of 90%
+      acetone for 24h at -20ºC, then brought to room temperature and the extract
+      is decanted and measured using a Chemistry Turner Model 10 Fluorometer,
+      which has been calibrated with solutions of commercially prepared
+      chlorophyll.
+
+      Nutrient samples are analyzed fresh on board using a Technicon AAII auto-
+      analyzer following methods described in Barwell-Clarke and Whitney (1996).
+
+      References:
+      1. Carpenter, J.H. 1965. The Chesapeake Bay Institute Technique for the
+      Winkler Dissolved Oxygen Method. Limmnol. & Oceanogr., 10: 141-143.
+      2. J. Barwell-Clarke and F. Whitney. 1996. Institute of Ocean Sciences
+      Nutrient Methods and Analysis. Canadian Technical Report of Hydrography
+      and Ocean Sciences, No. 182, 43 pp.
+
+    $REMARKS
+        Data quality is expressed with the following flags
+        ----------------------------------------------------------------------------
+        a = Sample for this measurement was drawn from water bottle but not analyzed
+            (not normally used).
+        b = Acceptable measurement (not normally used).
+        c = Questionable measurement (no problem observed in sampling or analysis,
+            but value is not trusted, nonetheless; includes outlyers).
+        d = Bad measurement (known problem with sampling or analysis, but not
+            serious enough to completely discard the value).
+        e = Not reported (lost sample; unredeemably bad measurement).
+        f = Mean of replicate measurements.
+        g = Manual chromatographic peak measurement.
+        h = Irregular digital chromatographic peak integration.
+        i = Sample not drawn for this measurement from this bottle (not normally
+            used).
+        ----------------------------------------------------------------------------
+
+!---1---- ----2---- ---3---- 4 --5--- 6- --7-- 8 --9--- 10--11- 12-13-
+!Pressure Temperatu Salinity F Oxygen Fl Nitra F Phosph F Silic F Samp
+!:CTD     re:CTD    :Bottle  l :      ag te_   l ate    l ate   l le_ 
+!                            ~ Dissol ~o plus_ ~        ~       ~ Numb
+!                            l ved    lv Nitri t        t       t er  
+!                            e        ed te    e        e       e     
+!-------- --------- -------- - ------ -- ----- - ------ - ----- - ----
+*END OF HEADER
+      5.6    9.4246   32.475   276.07      9.2     1.01    10.9    153
+      9.9    9.4227   32.475   272.85      9.2     1.00    10.9    152
+     24.9    9.4312   32.476   272.80      9.2     1.01    10.7    151
+     49.9    9.4387   32.475   272.32      9.2     1.01    10.7    150
+     74.0    9.4220   32.548   260.89     10.3     1.08    11.8    149
+    100.7    8.4266   33.579   139.66     27.1     2.08    30.3    148
+    124.4    8.2088   33.746   119.93     29.4     2.24    35.5    147
+    149.8    7.9689   33.862   103.30     30.9     2.35    40.1    146
+    174.3    7.7218   33.894   103.29     31.2 f   2.34 f  41.0 f  145
+    200.3    7.4632   33.931    97.81     32.3     2.38    43.3    144
+    249.3    7.0305   33.980    84.97     34.1     2.50    50.1    143
+    299.9    6.4885   33.996    78.27     36.4     2.62    56.1    142
+    400.6    5.2437   33.972    66.13     39.6     2.83    71.5    141
+    599.2    4.6150   34.170    20.04     43.9     3.21    96.6    140
+    599.5    4.6148   34.169    19.69     43.6     3.21    96.9    139
+    799.4    4.0586   34.289    13.47     44.5     3.32   115.5    138
+    999.7    3.5532   34.377    12.65     45.0     3.33   131.0    137
+   1251.0    3.0550   34.457    18.03     45.0     3.30   145.4    136
+   1291.0    2.9517   34.473    22.51     44.7     3.29   149.2    135

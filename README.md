@@ -1,6 +1,12 @@
 # oceanography-notebooks
 IPython/Jupyter notebooks showing examples of oceanographic data analysis.
 
+### Physical oceanography
+
+[Line P hydrographic data](Line_P/plot_line_p_profiles.ipynb)
+
+[Abyssal recipes](Abyssal_Recipes/Abyssal_Recipes.ipynb)
+
 ### Loading and plotting data
 
 [MLML\_seawater.ipynb](MLML_seawater.ipynb)

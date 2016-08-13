@@ -1,0 +1,69 @@
+*2007/01/10 09:16:49.42
+*IOS HEADER VERSION 1.6  2006/03/07 2006/03/07
+
+*FILE
+    START TIME          : UTC 2006/09/21 22:26:45.000
+    TIME INCREMENT      : 0 0 0 0.416667E-01 0  ! (day hr min sec ms)
+    NUMBER OF RECORDS   : 12
+    DATA DESCRIPTION    : Bottle:Rosette:Up:Stop + CTD:Up
+    FILE TYPE           : ASCII
+    NUMBER OF CHANNELS  : 4
+
+    $TABLE: CHANNELS
+    ! No Name              Units           Minimum        Maximum
+    ! -- ----------------- --------------- -------------- --------------
+       1 Pressure          dbar            201.8          1300.7
+       2 Temperature:CTD   deg_C_(ITS90)   2.8431         7.2979
+       3 Salinity:CTD      PSS-78          33.9714        34.4874
+       4 Sample_Number     n/a             55             66
+    $END
+
+    $TABLE: CHANNEL DETAIL
+    ! No  Pad   Start  Width  Format  Type  Decimal_Places
+    ! --  ----  -----  -----  ------  ----  --------------
+       1  -99   ' '        7  F       ' '     1
+       2  -99   ' '        9  F       ' '     4
+       3  -99   ' '        9  F       ' '     4
+       4  -99   ' '        5  I       I       0
+    $END
+
+*ADMINISTRATION
+    MISSION             : 2006-15
+    AGENCY              : IOS, Ocean Sciences Division, Sidney, B.C.
+    COUNTRY             : Canada
+    PROJECT             : Line P
+    SCIENTIST           : Robert M.
+    PLATFORM            : John P. Tully
+
+*LOCATION
+    GEOGRAPHIC AREA     : NE Pacific
+    STATION             : P4
+    EVENT NUMBER        : 7
+    LATITUDE            :  48  39.09000 N  ! (deg min)
+    LONGITUDE           : 126  39.83000 W  ! (deg min)
+    WATER DEPTH         : 1307
+
+*INSTRUMENT
+    TYPE                : Sea-Bird CTD
+    MODEL               : SBE-911plus
+    SERIAL NUMBER       : 0550
+
+!--1--- ---2---- ---3---- -4--
+!Pressu Temperat Salinity Samp
+!re     ure:CTD  :CTD     le_ 
+!                         Numb
+!                         er  
+!------ -------- -------- ----
+*END OF HEADER
+  201.8   7.2979  33.9714   66
+  202.8   7.2919  33.9725   65
+  501.1   4.9126  34.0906   64
+  501.1   4.9123  34.0910   63
+  704.7   4.2851  34.2298   62
+  703.9   4.2882  34.2299   61
+  901.6   3.8458  34.3415   60
+  901.7   3.8463  34.3413   59
+ 1100.6   3.3332  34.4205   58
+ 1100.9   3.3333  34.4204   57
+ 1300.7   2.8431  34.4874   56
+ 1300.3   2.8444  34.4871   55
