@@ -11,6 +11,8 @@ IPython/Jupyter notebooks showing examples of oceanographic data analysis.
 
 [MLML\_seawater.ipynb](MLML_seawater.ipynb)
 
+[Monterey Bay bathymetry](montereybay_bathymetry.ipynb)
+
 [ocean\_color\_netcdf.ipynb](ocean_color_netcdf.ipynb)
 
 ### Time series analysis
